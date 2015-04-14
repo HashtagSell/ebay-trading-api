@@ -10,16 +10,18 @@
   var js2xmlparser = require('js2xmlparser');
   var moment = require('moment');
   var xml2js = require('xml2js');
+  var common   = require('../../config/common.js');
+  var config   = common.config();
   
   // "Don't use more than 18 simultaneous threads to make API calls."
   // https://go.developer.ebay.com/developers/ebay/forums-support/certification
   var concurrency = 5;
   
   // eBay API environment
-  var env = require('./env');
+  var env = config.ebay.api;
   
   // Application keys
-  var appkeys = require('./appkeys');
+  var appkeys = config.ebay.keys;
   
   // Queue object
   var queue = async.queue(function(task, callback) {
