@@ -1,5 +1,0 @@
-var config = {
-  eBayAuthToken: 'Your eBay token'
-}
-
-module.exports = config;
