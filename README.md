@@ -3,10 +3,6 @@ ebay-trading-api
 
 A node client for eBay Trading API.
 
-## Installation
-
-npm install ebay-trading-api
-
 ## Configuration
 
 Copy env.js.production or env.js.sandbox to env.js file.
